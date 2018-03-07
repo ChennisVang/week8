@@ -40,3 +40,14 @@ echo c > dir_1/file_3
 echo d > dir_2/file_4
 ln dir_1/file_3 dir_2/file_5
 ls -i
+
+Nano Matt
+ls-l
+Echo Matt>/dev/null
+Cd /dev
+Find Matt
+Cat if=/dev/matt of=hi bs=1
+Count=3
+Cat/dev/null>Matt
+Blkid
+Blkid-po udev/dev/loop0
