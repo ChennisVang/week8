@@ -51,3 +51,52 @@ Count=3
 Cat/dev/null>Matt
 Blkid
 Blkid-po udev/dev/loop0
+
+
+
+
+cd /tmp
+dd if=/dev/zero of=./32MB.img bs=1M count=32
+hexdump ./32MB.img
+sudo mkfs -t ext4 ./32MB.img
+
+ls -l /sbin/mkfs.*
+
+sudo mkdir /mnt/tmp
+sudo mount ./32.MB.img /mnt/tmp
+mount
+
+df -h
+
+lsblk
+
+cd /mnt/tmp
+ls
+echo "Derp" > ./derp.txt
+sudo umount /mnt/tmp
+rm derp.txt
+free
+
+press_enter
+;;
+
+	4 )ls
+#Rough draft, will be fleshing this out more
+
+
+who -r
+ls /usr.lib/systemd
+sudo systemctl list-units
+sudo systemctl -p UnitPath show
+sudo systemctl list-dependencies
+sudo system-analyze critical-chain
+
+cd /usr/lib/systemd/ 
+ls
+
+press_enter
+;;
+	0 ) exit;;
+	* ) "Please enter 1-4, or 0"
+	esac
+done
